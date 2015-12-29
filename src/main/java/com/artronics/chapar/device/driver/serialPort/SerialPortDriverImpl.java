@@ -53,7 +53,7 @@ public class SerialPortDriverImpl extends BaseDeviceDriver implements SerialPort
         SerialPort serialPort = null;
 
         try {
-            commPort = identifier.open("SinkPort", 2000);
+            commPort = identifier.open("SinkPort", timeout);
             //the CommPort object can be casted to a SerialPort object
             serialPort = (SerialPort) commPort;
 
@@ -77,9 +77,17 @@ public class SerialPortDriverImpl extends BaseDeviceDriver implements SerialPort
     }
 
     @Override
-    public void close()
+    public void close() throws DeviceConnectionException
     {
+        try {
+            serialPort.close();
+            input.close();
+            output.close();
 
+        }catch (IOException e) {
+            e.printStackTrace();
+            throw new DeviceConnectionException("IO exp while closing connection");
+        }
     }
     private void initEventListenersAndIO() throws DeviceConnectionException
     {

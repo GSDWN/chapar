@@ -32,6 +32,9 @@ public abstract class BaseDeviceDriver
     @Value("com.artronics.chapar.device.connection.connection_string")
     protected String connectionString;
 
+    @Value("com.artronics.chapar.device.connection.timeout")
+    protected Integer timeout;
+
     protected void bufferReceived(){
         try {
 

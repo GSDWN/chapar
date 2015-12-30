@@ -1,6 +1,7 @@
 package com.artronics.chapar.device;
 
-import com.artronics.chapar.device.driver.DeviceDriver;
+import com.artronics.gsdwn.core.device.DeviceDriverService;
+import com.artronics.gsdwn.core.device.driver.DeviceDriver;
 import com.artronics.gsdwn.core.exception.DeviceConnectionException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

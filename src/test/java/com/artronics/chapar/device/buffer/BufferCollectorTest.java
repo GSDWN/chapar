@@ -2,6 +2,7 @@ package com.artronics.chapar.device.buffer;
 
 import com.artronics.chapar.ChaparApplication;
 import com.artronics.chapar.helper.FakeConnectionBuffer;
+import com.artronics.gsdwn.core.device.buffer.BufferCollector;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

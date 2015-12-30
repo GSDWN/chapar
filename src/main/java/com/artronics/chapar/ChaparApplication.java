@@ -1,6 +1,6 @@
 package com.artronics.chapar;
 
-import com.artronics.chapar.device.DeviceDriverService;
+import com.artronics.gsdwn.core.device.DeviceDriverService;
 import com.artronics.gsdwn.core.event.DevicePacketReceived;
 import com.artronics.gsdwn.core.exception.DeviceConnectionException;
 import org.apache.log4j.Logger;

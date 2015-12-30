@@ -1,6 +1,6 @@
 package com.artronics.chapar.device.driver;
 
-import com.artronics.chapar.exception.DeviceConnectionException;
+import com.artronics.gsdwn.core.exception.DeviceConnectionException;
 
 public interface DeviceDriver
 {

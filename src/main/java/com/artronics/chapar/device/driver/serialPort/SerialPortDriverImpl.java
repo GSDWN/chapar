@@ -2,7 +2,7 @@ package com.artronics.chapar.device.driver.serialPort;
 
 import com.artronics.chapar.device.driver.BaseDeviceDriver;
 import com.artronics.chapar.device.driver.DeviceDriver;
-import com.artronics.chapar.exception.DeviceConnectionException;
+import com.artronics.gsdwn.core.exception.DeviceConnectionException;
 import gnu.io.*;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;

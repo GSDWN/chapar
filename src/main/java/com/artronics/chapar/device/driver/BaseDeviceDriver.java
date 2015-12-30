@@ -1,6 +1,6 @@
 package com.artronics.chapar.device.driver;
 
-import com.artronics.chapar.event.DevicePacketReceived;
+import com.artronics.gsdwn.core.event.DevicePacketReceived;
 import com.artronics.gsdwn.core.models.packet.DevicePacket;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

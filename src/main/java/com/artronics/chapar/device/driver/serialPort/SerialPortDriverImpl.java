@@ -18,6 +18,12 @@ public class SerialPortDriverImpl extends BaseDeviceDriver implements SerialPort
     private CommPortIdentifier identifier;
     private SerialPort serialPort;
 
+    @Override
+    public void init()
+    {
+        setConnection();
+    }
+
     private void setConnection()
     {
         Enumeration portsEnum = CommPortIdentifier.getPortIdentifiers();

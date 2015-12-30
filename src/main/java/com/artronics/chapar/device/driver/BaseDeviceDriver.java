@@ -26,13 +26,13 @@ public abstract class BaseDeviceDriver
 
     protected String driverName= this.toString();
 
-    @Value("com.artronics.chapar.device.id")
+    @Value("${com.artronics.chapar.device.id}")
     protected Long deviceId;
 
-    @Value("com.artronics.chapar.device.connection.connection_string")
+    @Value("${com.artronics.chapar.device.connection.connection_string}")
     protected String connectionString;
 
-    @Value("com.artronics.chapar.device.connection.timeout")
+    @Value("${com.artronics.chapar.device.connection.timeout}")
     protected Integer timeout;
 
     protected void bufferReceived(){

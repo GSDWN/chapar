@@ -1,11 +1,9 @@
-package com.artronics.chapar.device.driver;
+package com.artronics.chapar.device;
 
 import com.artronics.chapar.exception.DeviceConnectionException;
 
-public interface DeviceDriver
+public interface DeviceDriverService
 {
-    void init();
-
     void open() throws DeviceConnectionException;
 
     void close() throws DeviceConnectionException;

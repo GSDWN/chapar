@@ -1,6 +1,6 @@
 package com.artronics.chapar.event;
 
-import com.artronics.chapar.packet.DevicePacket;
+import com.artronics.gsdwn.core.models.packet.DevicePacket;
 
 public class DevicePacketReceived extends BaseEvent<DevicePacket>
 {

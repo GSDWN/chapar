@@ -5,7 +5,7 @@
 
 	<groupId>com.artronics.chapar</groupId>
 	<artifactId>chapar</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>chapar</name>
@@ -20,6 +20,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <gsdwn.version>0.0.2-SNAPSHOT</gsdwn.version>
 		<java.version>1.8</java.version>
 	</properties>
 
@@ -28,7 +29,7 @@
         <dependency>
             <groupId>com.artronics.gsdwn.core</groupId>
             <artifactId>gsdwn-core</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${gsdwn.version}</version>
         </dependency>
 
         <dependency>

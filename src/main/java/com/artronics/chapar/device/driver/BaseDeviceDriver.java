@@ -26,6 +26,9 @@ public abstract class BaseDeviceDriver
 
     protected String driverName= this.toString();
 
+    @Value("${com.artronics.chapar.controller.id}")
+    protected Long controllerId;
+
     @Value("${com.artronics.chapar.device.id}")
     protected Long deviceId;
 
@@ -55,7 +58,7 @@ public abstract class BaseDeviceDriver
     }
 
     public void fireDevicePacketReceived(List<Integer> buffer){
-        DevicePacket packet = new DevicePacket(buffer,deviceId);
+        DevicePacket packet = new DevicePacket(buffer,controllerId,deviceId);
         DevicePacketReceived event = new DevicePacketReceived(this, packet);
         publisher.publishEvent(event);
     }

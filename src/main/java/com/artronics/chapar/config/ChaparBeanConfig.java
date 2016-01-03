@@ -1,9 +1,11 @@
 package com.artronics.chapar.config;
 
 import org.apache.log4j.Logger;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 @ComponentScan(basePackages = {
@@ -13,4 +15,10 @@ import org.springframework.context.annotation.PropertySource;
 public class ChaparBeanConfig
 {
     private final static Logger log = Logger.getLogger(ChaparBeanConfig.class);
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer placeHolderConfigurer()
+    {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 }
